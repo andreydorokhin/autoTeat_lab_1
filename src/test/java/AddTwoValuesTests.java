@@ -34,8 +34,7 @@ public class AddTwoValuesTests {
     public void secondTestAddIntToInt() {
         assertEquals("5 + -5 must be 0", 0, calc.add(5,-5));
     }
-    //TODO
-    //add tests for new methods
+
     @Test
     public void testMultiply() {
         assertEquals("5 * 5 must be 25", 25, calc.multiply(5, 5));
