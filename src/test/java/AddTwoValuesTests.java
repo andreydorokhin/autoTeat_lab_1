@@ -20,7 +20,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testAddTwoPositiveValues() {
-        assertEquals("10 + 5 must be 15", 10, calc.add(10, 5));
+        assertEquals("10 + 5 must be 15", 15, calc.add(10, 5));
     }
 
     @Test
@@ -41,8 +41,8 @@ public class AddTwoValuesTests {
     }
 
     @Test
-    public void testAriphmeticDivision() {
-        assertEquals("20 / 5 must be 4.0", 0.0f, calc.division(20,0));
+    public void testAriphmeticDivision() throws Exception {
+        assertEquals("20 / 5 must be 4.0", 10.0f, calc.division(20,2));
     }
 
     @Test
@@ -50,18 +50,20 @@ public class AddTwoValuesTests {
        try{
            calc.division(20,0);
            assertEquals("Somthing Wrong",true,false);
-       }catch(ArithmeticException ae){
+       }catch(Exception ae){
           assertEquals("You shouldnt do it","/ by zero", ae.getMessage());
        }
     }
 
     @Test
     public void testAriphmeticSqrt() {
+
         assertEquals("sqrt from 0 must be 0.0", 0.0, calc.ariphmeticSqrt(0));
     }
 
     @Test
     public void testAriphmeticPower() {
+
         assertEquals("2 popwer 3 must be 8", 8.0, calc.ariphmeticPower(2, 3));
     }
 

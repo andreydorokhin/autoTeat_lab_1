@@ -17,13 +17,8 @@ public class Calculator {
         return a * b;
     }
 
-    public float division(int a, int b) {
-        try {
-          return a/b;
-        }catch (ArithmeticException ae){
-            System.out.println(ae.getMessage());
-        }
-        return 0;
+    public float division(int a, int b)  throws Exception {
+        return a/b;
     }
 
     public int substraction(int a, int b) {
