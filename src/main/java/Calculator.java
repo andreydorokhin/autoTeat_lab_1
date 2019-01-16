@@ -18,7 +18,9 @@ public class Calculator {
     }
 
     public float division(int a, int b)  throws Exception {
+
         return a/b;
+
     }
 
     public int substraction(int a, int b) {
