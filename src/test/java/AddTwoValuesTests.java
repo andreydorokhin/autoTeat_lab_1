@@ -25,6 +25,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testAddTwoNegativeValues() {
+
         assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
     }
 
@@ -32,27 +33,33 @@ public class AddTwoValuesTests {
     //add new tests for add() method
     @Test
     public void secondTestAddIntToInt() {
+
         assertEquals("5 + -5 must be 0", 0, calc.add(5,-5));
     }
 
     @Test
     public void testMultiply() {
+
         assertEquals("5 * 5 must be 25", 25, calc.multiply(5, 5));
     }
 
     @Test
     public void testAriphmeticDivision() throws Exception {
+
         assertEquals("20 / 5 must be 4.0", 10.0f, calc.division(20,2));
+
     }
 
     @Test
     public void testDivideZero() {
+
        try{
            calc.division(20,0);
            assertEquals("Somthing Wrong",true,false);
        }catch(Exception ae){
           assertEquals("You shouldnt do it","/ by zero", ae.getMessage());
        }
+
     }
 
     @Test
@@ -69,6 +76,7 @@ public class AddTwoValuesTests {
 
     @After
     public void consolePrintAfter() {
+
         System.out.println("Tests finished!!! ");
 
     }
