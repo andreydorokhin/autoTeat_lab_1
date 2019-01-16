@@ -19,10 +19,11 @@ public class Calculator {
 
     public float division(int a, int b) {
         try {
-          a/b;
+          return a/b;
         }catch (ArithmeticException ae){
             System.out.println(ae.getMessage());
         }
+        return 0;
     }
 
     public int substraction(int a, int b) {
